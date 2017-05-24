@@ -1,7 +1,7 @@
 # compute-s3-etag
 
 
-AWS S3 ETag is not a ordinary MD5 hash.
+AWS S3 ETag is not an ordinary MD5 hash (http://docs.aws.amazon.com/AmazonS3/latest/API/RESTCommonResponseHeaders.html).
 
 The default chunk size is 8 MB used by the official `aws cli` tool.
 
@@ -21,3 +21,4 @@ $ aws s3api head-object --bucket chunj-ref --key vep86.tgz
 $ python compute_s3_etag.py
 "fbf3e61bc72ad19cf4d6e90a6c174687-2092"
 ```
+
